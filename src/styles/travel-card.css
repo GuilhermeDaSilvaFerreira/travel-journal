@@ -1,0 +1,70 @@
+.travel-card-container {
+    min-height: 30vh;
+    width: 65vw;
+
+    padding: 20px;
+    gap: 20px;
+
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.landscape-image {
+    width: 30%;
+    border-radius: 5px;
+}
+
+.location {
+    gap: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.country-name {
+    font-weight: 400;
+    font-size: 1.1em;
+    letter-spacing: 0.17em;
+
+    color: #2B283A;
+}
+
+.google-maps-link {
+    font-weight: 400;
+    font-size: 1.1em;
+
+    text-decoration-line: underline;
+
+    color: #918E9B;
+}
+
+.location-name {
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 70%;
+
+    color: #2B283A;
+
+    margin: 20px 0 50px 0;
+}
+
+.travel-date {
+    font-weight: 700;
+    font-size: 1.1em;
+    line-height: 120%;
+
+    color: #2B283A;
+
+    margin: 20px 0;
+}
+
+.location-description {
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 150%;
+
+    color: #2B283A;
+}

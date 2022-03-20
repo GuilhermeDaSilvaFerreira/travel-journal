@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
+import TravelCard from './components/TravelCard'
+import data from './models/data'
+import './styles.css'
 
-function App() {
+export default function App() {
+  function getTravelCardComponents(){
+    return data.map(singleData => <TravelCard key={singleData.id} {...singleData} />)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {getTravelCardComponents()}
     </div>
   );
 }
-
-export default App;
