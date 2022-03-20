@@ -13,7 +13,8 @@
 }
 
 .landscape-image {
-    width: 30%;
+    height: 25vh;
+    width: 25%;
     border-radius: 5px;
 }
 
@@ -35,8 +36,6 @@
 .google-maps-link {
     font-weight: 400;
     font-size: 1.1em;
-
-    text-decoration-line: underline;
 
     color: #918E9B;
 }
@@ -67,4 +66,52 @@
     line-height: 150%;
 
     color: #2B283A;
+}
+
+@media screen and (max-width: 1129px) {
+    .travel-card-container {
+        min-height: 30vh;
+        width: 80vw;
+    }
+    
+    .landscape-image {
+        height: 25vh;
+        width: 30%;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .travel-card-container {
+        min-height: 30vh;
+        width: 100vw;
+    }
+
+    .location-name {
+        line-height: 100%;
+    
+        margin: 10px 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .country-name {
+        font-size: 0.7em;
+    }
+
+    .google-maps-link {
+        font-size: 0.7em;
+    }
+
+    .location-name {
+        font-size: 2em;
+    }
+
+    .travel-date {
+        font-size: 0.7em;
+    }
+
+    .location-description {
+        font-size: 0.5em;
+    }
 }
